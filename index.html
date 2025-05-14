@@ -5,54 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mia Assistant — Fix What Matters</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #f0f4f8;
-      padding: 24px;
-      margin: 0;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .box {
-      max-width: 600px;
-      margin: 0 auto;
       background: #fff;
-      padding: 36px 28px;
+      max-width: 540px;
+      width: 100%;
+      padding: 40px 24px;
       border-radius: 14px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 22px rgba(0,0,0,0.08);
       text-align: center;
     }
     .logo {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 16px;
+      width: 64px;
+      height: 64px;
+      margin-bottom: 18px;
     }
     h1 {
       font-size: 24px;
       color: #111;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 16px;
+      font-size: 15px;
       color: #555;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
+    }
+    .btn-block {
+      margin-bottom: 20px;
     }
     .btn {
       display: block;
-      width: 90%;
-      margin: 12px auto;
-      padding: 16px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
+      width: 100%;
+      padding: 14px;
       font-size: 17px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
       border-radius: 8px;
       font-weight: 500;
     }
     .btn:hover {
       background-color: #0056b3;
     }
+    .subtext {
+      font-size: 13px;
+      color: #444;
+      margin-top: 6px;
+    }
     .footer {
       margin-top: 45px;
-      font-size: 15px;
+      font-size: 14px;
       color: #555;
       line-height: 1.6em;
     }
@@ -60,19 +71,29 @@
 </head>
 <body>
   <div class="box">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" alt="Mia Assistant" class="logo"/>
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712074.png" alt="Mia Assistant Logo" class="logo"/>
+
     <h1>Mia Assistant — Fix What Matters</h1>
-    <p>Need something fixed? Choose your problem below and connect to a specialist now.</p>
+    <p>Something broken or urgent? Get instant help. Tap below to fix your issue now.</p>
 
-    <a href="https://afflat3c2.com/trk/lnk/FBCBD0E8-DC6B-428B-898E-00362FD349C5/?o=22647&c=918273&a=760819&k=E0849285211BDBED65CDA40BA8334C5E&l=23510" class="btn">Fix My Home</a>
+    <div class="btn-block">
+      <a href="https://afflat3c2.com/trk/lnk/FBCBD0E8-DC6B-428B-898E-00362FD349C5/?o=22647&c=918273&a=760819&k=E0849285211BDBED65CDA40BA8334C5E&l=23510" class="btn">Fix My Home</a>
+      <div class="subtext">Chat with a certified home repair expert now</div>
+    </div>
 
-    <a href="https://afflat3c1.com/trk/lnk/FBCBD0E8-DC6B-428B-898E-00362FD349C5/?o=22645&c=918277&a=760819&k=6A55410D604D2D50BCA43FA8C1FF2032&l=23506" class="btn">Fix My Health</a>
+    <div class="btn-block">
+      <a href="https://afflat3c1.com/trk/lnk/FBCBD0E8-DC6B-428B-898E-00362FD349C5/?o=22645&c=918277&a=760819&k=6A55410D604D2D50BCA43FA8C1FF2032&l=23506" class="btn">Fix My Health</a>
+      <div class="subtext">Talk to a real doctor in minutes</div>
+    </div>
 
-    <a href="https://afflat3c2.com/trk/lnk/FBCBD0E8-DC6B-428B-898E-00362FD349C5/?o=22649&c=918277&a=760819&k=147E0A30148D1507535814BB6E163753&l=23509" class="btn">Fix My Car</a>
+    <div class="btn-block">
+      <a href="https://afflat3c2.com/trk/lnk/FBCBD0E8-DC6B-428B-898E-00362FD349C5/?o=22649&c=918277&a=760819&k=147E0A30148D1507535814BB6E163753&l=23509" class="btn">Fix My Car</a>
+      <div class="subtext">Chat with a mechanic for diagnostics & repairs</div>
+    </div>
 
     <div class="footer">
       www.autoailtd.com<br/>
-      In partnership with EdilNor Building Group
+      A project of EdilNor Building Group Ltd., London
     </div>
   </div>
 </body>
